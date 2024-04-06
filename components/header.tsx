@@ -7,7 +7,7 @@ import { MobileMenu } from "./ui/mobilemenu";
 
 export default function Header() {
   return (
-    <header className="w-full h-auto my-6 backdrop-blur-lg sticky top-0 z-20 dark:text-slate-400 px-8">
+    <header className="rounded-md shadow m-4 backdrop-blur-lg sticky top-0 z-20 dark:text-slate-400">
       <nav className="flex items-center justify-between p-4">
         <Logo />
         <NavList />

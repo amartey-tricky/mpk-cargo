@@ -3,6 +3,7 @@ import { getCldOgImageUrl } from "next-cloudinary";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -63,6 +64,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

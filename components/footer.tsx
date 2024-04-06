@@ -34,19 +34,39 @@ export default function Footer() {
             href="/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <CldImage src="logo_lhvmu4" alt="Mpk logo" height={40} width={40} />
-            <span className="self-center text-xl font-semibold whitespace-nowrap">MPK Cargo</span>
+            <CldImage
+              src="logo_lhvmu4"
+              alt="Mpk logo"
+              height={40}
+              width={40}
+              loading="lazy"
+            />
+            <span className="self-center text-xl font-semibold whitespace-nowrap">
+              MPK Cargo
+            </span>
           </Link>
           <nav className="flex flex-wrap items-center mb-6 text-sm font-medium gap-4 md:gap-6 sm:mb-0">
-            {Links.map((link => {
+            {Links.map((link) => {
               return (
-                <Link key={link.name} href={link.href} className="hover:underline transition-all ease-in-out duration-300">{link.name}</Link>
-              )
-            }))}
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="hover:underline transition-all ease-in-out duration-300"
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </nav>
         </div>
         <hr className="my-6 border-slate-600 sm:mx-auto ld:my-8" />
-        <span className="block text-sm sm:text-center">© 2024 <Link href="/" className="hover:underline">MPK Cargo Logistics™</Link>. All Rights Reserved.</span>
+        <span className="block text-sm sm:text-center">
+          © 2024{" "}
+          <Link href="/" className="hover:underline">
+            MPK Cargo Logistics™
+          </Link>
+          . All Rights Reserved.
+        </span>
       </div>
     </footer>
   );

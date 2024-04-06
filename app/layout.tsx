@@ -62,6 +62,7 @@ export default function RootLayout({
           defaultTheme="system"
           disableTransitionOnChange
         >
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] dark:absolute dark:top-0 dark:z-[-2] dark:h-screen dark:w-screen dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] dark:bg-[size:20px_20px]"></div>
           <Header />
           {children}
           <Footer />

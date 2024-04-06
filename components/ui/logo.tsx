@@ -8,8 +8,8 @@ export default function Logo() {
         <CldImage
           src="logo_lhvmu4"
           alt="Mpk logo"
-          width={80}
-          height={80}
+          width={55}
+          height={55}
           priority
         />
       </Link>

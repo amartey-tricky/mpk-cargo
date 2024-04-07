@@ -8,6 +8,9 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "MPK Cargo Logistics";
+const description = "Your total logistics partner for importing from China"
+
 const ogImageUrl = getCldOgImageUrl({
   src: "logo_jch8fh",
   crop: "thumb",
@@ -21,8 +24,8 @@ const twitterImageUrl = getCldOgImageUrl({
 });
 
 export const metadata: Metadata = {
-  title: "MPK Cargo Logistics",
-  description: "Your total logistics partner for importing from China",
+  title: title,
+  description: description,
   openGraph: {
     images: [
       {
@@ -32,10 +35,17 @@ export const metadata: Metadata = {
         alt: "MPK Cargo Logistics",
       },
     ],
+    title: title,
+    description: description,
+    type: "website",
+    url: "https://mpkcargologistics.com",
+    siteName: "MPK Cargo Logistics",
+    locale: "en_US",
   },
   twitter: {
     site: "@mpk_cargo",
     title: "MPK Cargo Logistics",
+    card: "summary_large_image",
     description: "Your total logistics partner for importing from China",
     images: [
       {
@@ -46,6 +56,17 @@ export const metadata: Metadata = {
       },
     ],
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-video-preview": "large",
+      "max-snippet": -1,
+    }
+  }
 };
 
 export default function RootLayout({

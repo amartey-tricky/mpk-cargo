@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Hero from "@/components/hero"
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between m-4">
-      <h1 className="text-6xl font-bold">MPK Cargo Logistics</h1>
+      <Hero />
     </main>
   );
 }

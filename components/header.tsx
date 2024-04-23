@@ -13,7 +13,6 @@ export default function Header() {
         <NavList />
         <div className="flex gap-3">
           <ModeToggle />
-          <MobileMenu />
         </div>
       </nav>
     </header>
